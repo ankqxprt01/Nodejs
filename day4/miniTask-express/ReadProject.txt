@@ -1,0 +1,5 @@
+mkdir miniTask
+cd miniTask
+npm init -y
+npm install express
+create data.json file

@@ -1,0 +1,41 @@
+1)A promise is a promise of code execution.
+A promise is an object that respresent the eventual compilation or failur
+of an asynchronous operation and its resulting value.
+
+live eg:
+suppose u want to order a pizza from swiggy then it will take estimated time
+what u will do u will do rest of ur work or u will continue watch for it?
+
+2)the solution to promise is callbackhell
+3)the code either executes or fails in both cases subscriber will notify?
+
+Syntax:
+let promise = new Promise(function(resolve,reject){
+    // codes
+})
+
+resolve and reject are 2 callbacks provided 
+by js engine itself they are called.
+
+resolve(value) -> if job finished.
+reject(error)  -> if job fails.
+
+promises has 2 properties:
+1)state: initially pending,then changes to either
+"fulfilled" when resolve is called
+"reject" when reject is called
+
+2)result: initally undefined,then changes to value
+if resolved(resolve value) or error when rejected(reject error)
+
+you cant call directly promise.state or promise.result it will throw undefined error
+
+difference between 
+->fulfilled:
+In simple term u order something any how they dint complete ur order & they refunded.
+Means ur order is fulfill we settle our accounts
+->resolve: means this is ur order enjoy ur meal
+->reject: we are sorry
+
+Consumers: .then & catch
+

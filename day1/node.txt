@@ -1,0 +1,86 @@
+1)in 1995 js was used on client-side i.e on browser.
+2)html css is not a programming language.where as python java are standalone programming language
+3)Js is a programming language which works on browser
+4)how u can said programming language on browser?
+its a language which has to be converted into a language which has to be understand by computer or 
+machine code and that where we have engine between.
+It means browser has to inerpret i.e convert jscode into machine code this concept is called 
+JAVASCRIPT ENGINE now this engine will convert js code and put in machine code my be with help of
+compiler or interpreter
+5)so do we have only one js engine no we have multiple browser like chrome,firefox,nestscape safari etc
+so these browser use different engines.
+
+6)so 1st engine was spidermonkey is developed at nestscape by creator of brandan 
+eich and it was developed in just 10days
+so entire language with compiler with engine jsut created in 10days, now we have
+chrome which has v8 engine.v8 engine become most popular now it is built in every other browser
+
+7)why v8?
+bcoz its directly converting code machine code which makes it faster.as it was growing faster
+so they thaught we will not run it on browser will run it everywhere
+
+8)now the question was js can used everywhere?
+can we use it on mobile appln,desktop appln or on server?
+one of them thaught we use v8 to built run time enviroment that will work on machine
+and they named it as Nodejs
+
+9)Nodejs is not programming language its a run time enviroment that 
+lets u run js outside ur browser
+now using nodejs u can build standalone application
+
+nodejs is js engine which runs ur js on physical machine
+what if we can add http component or http module inside nodejs that means 
+the moment u have http power means u can use nodejs on server side component
+so there are lots of http module or some can downloaded from internet.
+
+so now js can be used on client and can be used on server side with this 
+we have concept of full-stack-developement
+
+but do we have framework to build web application in js?
+like java framework has spring ,python has django,
+what framework do we use in js?
+as nodejs is not framework so wee have to use some framework so now we have 3 js
+now 
+we have nodejs as runtime 
+we have express as framework
+we have mongodb as database 
+we have react to build our U/I 
+
+Which we spell MERN OR MEAN STACK
+
+nodejs has one more thing which is called NPM(node package manager)
+for eg:in java when u built appln u use external dependencies
+for eg working with database we need connecter in between,or working with files
+
+so in nodejs there are also packages that gives us all modules
+
+in short nodejs is javascript run time enviroment which uses the v8 javascript engine
+
+steps to downlaod nodejs go to chrome search nodejs and just download it
+
+simple code for nodejs create app.js and write below code
+var http = require("http");
+http.createServer(function(req,res){
+    res.write("hello world);
+    res.end()
+
+    or 
+
+    //it means whatever i am sending is in html format
+    res.writeHead(200,{'Content-Type':'text/html'})
+    res.end("hello world")
+
+}).listen(8080)
+
+--------------------------------------------------------------
+write node in ur terminal
+write
+console.log("hello world");
+hello world
+undefined 
+the output will be above
+
+so create any file_name.js and open the file in ur terminal
+to run the file type node file_name.js
+
+

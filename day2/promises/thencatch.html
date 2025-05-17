@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promises .then .catch</title>
+</head>
+<body>
+    <script>
+        
+// step 1
+let p1 = new Promise((resolve,reject)=>{
+    console.log("promise is pending"); 
+    setTimeout(()=>{
+        console.log("I am promise fulfilled"); // for resolve
+        resolve(true) // to fullfill we use true i.e boolean
+        // console.log("i am rejected");
+        // reject(new Error("i am an error"))
+    },5000)
+})
+
+console.log(typeof(p1));
+
+
+// step1
+// without 
+// calling console.log(p1)
+// output
+// promise is pending
+// I am promise fulfilled
+
+// step1
+// with calling 
+// console.log(p1)
+// Promise {<pending>}
+// [[Prototype]]: Promise
+// [[PromiseState]]: "pending"
+// [[PromiseResult]]: undefined
+
+// step 2 has reject we will catch that in .catch
+let p2 = new Promise((resolve,reject)=>{
+    console.log("promise is pending"); 
+    setTimeout(()=>{
+        console.log("i am rejected");
+        reject(new Error("i am an error"))
+    },5000)
+})
+
+
+// step 2
+// suppose calling 2promises at same time
+// console.log(p1,p2)// does it takes 10sec? no they will run parallely even if 20-30 promises can run parallely
+
+
+// step 3
+// now completing p1 get some value
+
+// to get value
+p1.then((val)=>{
+console.log(val);
+})
+
+// to catch error
+// p2.catch((error)=>{
+//     console.log("some error occured");
+// })
+
+// or 
+p2.then((value)=>{
+    console.log(value); 
+},(error)=>{
+    console.log(error); 
+})
+
+// step 1
+// this will be after calling promise in console.log(p1)
+// Promise 
+// {<pending>}[[Prototype]]: 
+// Promise[[PromiseState]]:"pending"
+// [[PromiseResult]]: undefined
+
+// resolve hoga toh we will get some value
+// reject will throw an error
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+In Node.js, the filesystem (fs) module provides a way to 
+interact with the file system on your computer. 
+It allows you to read, write, update, delete, and manage files and directories.

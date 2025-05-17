@@ -1,0 +1,32 @@
+ Streams are built-in objects in Node.js that let you process data 
+ piece-by-piece (chunk by chunk), as it arrives,
+ instead of loading everything into memory at once.
+
+ example:
+ Instead of reading an entire 5 GB video file into memory 
+ before sending it to the user (which would crash your server)
+
+ steps
+ Opens the file
+ Reads a small chunk (say 64 KB)
+ Sends that chunk
+ Then reads and sends the next chunk
+ Keeps going until done
+
+Like drinking from a straw instead of trying 
+to gulp(gatak jao ek sath) the whole glass at once.
+-------------------------------------------------------------
+absolute vs relative system path
+const path = require('path');
+
+console.log('Absolute path:');
+console.log(path.resolve('C:\Users\John\Projects\App\demo-video.mp4')); // absolute
+
+console.log('Relative path (resolved from current working directory):');
+console.log(path.resolve('videos/demo.mp4')); // relative
+
+CDN links can be considered absolute paths URL's like jquery,bootstrap etc
+absolute path have domain name like cdn.jsdelivr.net
+
+relative path do not have domain name
+Depend on the current pages location to resolve the path.

@@ -1,0 +1,16 @@
+**note if u dont have node_modules paclage-lock.json, package.json then only follow below step**
+
+1)open the foder in vs code -->open terminal
+2)npm init -y
+3)type npm i nodemon
+4)go to package.json file
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./day1/server.js"
+  },
+
+  add "start" in your scripts
+  my ./day1/server.js" folder path ur should be different
+
+  in day 3 
+  i hve installed express command to install express npm i express 
