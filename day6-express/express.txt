@@ -1,0 +1,54 @@
+Express.js is a simple and powerful web framework for Node.js. 
+It helps you build websites and APIs quickly and easily
+
+simple language:
+Node.js is kitchen
+Express.js is the waiter it takes requests from customers 
+(users), tells the kitchen (Node.js) what to do, and 
+then brings back the response (like food)
+
+What does Express do?
+Handles routes (URLs like /home, /about)
+Manages requests and responses (what the user sends and what they get back)
+Makes it easy to send HTML pages, JSON data, or files
+Use middleware small functions to handle things like logging, security, or error handling
+
+What is middleware?
+Middleware is like a helper function that sits in the middle of your app 
+between the request and the response.
+
+simple term
+You visit a coffee shop and order a coffee:
+You = user (request)
+Barista = the final route/handler (response)
+Middleware = steps in between: checking your ID, stamping your loyalty card, etc.
+
+In Express, middleware:
+Runs before the final response is sent.
+Can change the request, add data, check something, or even stop the request if needed.
+
+why expressjs?
+nodejs provides http module where user will send request and we have to send response.
+but if u have to build a web application it wii not work simple req res thing
+you wiil not say hey server and server will not say hello world.
+We build website where we have multiple types of requests where u requesting for image,
+,data or requesting home page or contact page or data of user etc
+that means u send a perticular request for perticular end points
+so for different types of response which u need u have to send different types of request
+and on server side there are different functions available and that function will be execuated when
+u send that type of request to handle that its good to use "frameworks" where express js is fast
+and provide minimum feautures that can build amazing website
+
+to know more about expressjs visit offficial expressjs.com
+
+fast unopinionated(it will allow  us to do whatever we want)
+some of frameworks they provide their own basic features they will say do like this,
+do like that whereas expressjs says do what u want.
+
+latest version is 5.1.0
+
+lets create a basic application
+create app.js file nd start coding
+npm init -y in terminal, npm nodemon 
+in package.json below scripts
+"start": "nodemon nameoffile",
