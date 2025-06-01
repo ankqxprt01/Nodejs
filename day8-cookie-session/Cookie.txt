@@ -1,0 +1,15 @@
+npm i cookie-parser
+npm init -y
+npm i nodemon
+
+Cookies are small pieces of data (text)stored on the client(browser) 
+and sent to the server with every HTTP request.
+They are used for:
+Session tracking (e.g., logged-in user)
+
+Cookies have attributes like:
+name: the key
+value: the data
+maxAge / expires: how long they last
+httpOnly: not accessible via JavaScript
+secure: only sent over HTTPS

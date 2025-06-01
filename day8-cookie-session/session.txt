@@ -1,0 +1,19 @@
+A session is a way to store information about a user across multiple 
+requests during their interaction with a web application
+
+How Do Sessions Work?
+Client makes a request (e.g., visits login page)
+Server creates a session for that client and stores session data on the server
+The server sends a session ID to the client, 
+usually stored in a cookie (commonly called connect.sid in Express)
+Client sends the session ID cookie back with every request
+When the session ends or expires, 
+the server deletes the stored session data, 
+and the client no longer has a valid session ID
+
+ Some-Feature     Sessions                                  Cookies                                      
+------------------------------------------------------------------------------------
+ Data Storage     Stored on server                          Stored on client (browser)                   
+ Data Size Limit  Larger, depends on server storage         Small (4KB per cookie)                       
+ Security         More secure, data not accessible via JS   Vulnerable to XSS if not `httpOnly`          
+ Usage            Stores user state, sensitive data         Stores less sensitive info, e.g. preferences 
