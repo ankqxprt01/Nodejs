@@ -1,0 +1,13 @@
+npm init -y
+npm i express
+npm i nodemon
+create data.json file to add data
+
+in package.json 
+"start":"nodemon index.js"  // add this line
+
+
+in vs code terminal
+type npm start
+u will get this-> Server running at http://localhost:3000
+
